@@ -1,4 +1,5 @@
 import { shouldTurnOnFan } from '../turnOnFan';
+import { describe, expect, it } from "vitest";
 
 describe('shouldTurnOnFan', () => {
     it('should return false below threshold', () => {
