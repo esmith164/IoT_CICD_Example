@@ -10,4 +10,11 @@ describe('averageTemperatureReading', () => {
         expect(averageTemperatureReading([10, 20, 30])).toBe(20);
         expect(averageTemperatureReading([5, 15])).toBe(10);
     });
+        it('should calculate average nagtives correctly', () => {
+        expect(averageTemperatureReading([-10, -20, -30])).toBe(-20);
+        expect(averageTemperatureReading([-5, -15])).toBe(-10);
+        expect(averageTemperatureReading([-5, -5, -5])).toBe(-5);
+
+    });
+
 });
