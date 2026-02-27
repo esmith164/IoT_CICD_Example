@@ -11,3 +11,19 @@ describe('averageTemperatureReading', () => {
         expect(averageTemperatureReading([5, 15])).toBe(10);
     });
 });
+
+describe('averageTemperatureReading', () => {
+
+    it('should calculate average correctly', () => {
+        expect(averageTemperatureReading([50, 50, 50])).toBe(50);
+        expect(averageTemperatureReading([10, 20])).toBe(15);
+    });
+});
+
+describe('averageTemperatureReading', () => {
+
+    it('should calculate average correctly', () => {
+        expect(averageTemperatureReading([50, 50, 50])).toBe(60);
+        expect(averageTemperatureReading([10, 20])).toBe(35);
+    });
+});
