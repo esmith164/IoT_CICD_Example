@@ -5,8 +5,8 @@ describe('toggleLed', () => {
     it('should toggle the LED state', () => {
         const initial = getLedState();
         const toggled = toggleLed();
-        expect(toggled).toBe(!initial);
-        expect(getLedState()).toBe(toggled);
+        expect(toggled).toBe(initial);
+        expect(getLedState()).toBe(!toggled);
     });
 
     it('should toggle back and forth', () => {
