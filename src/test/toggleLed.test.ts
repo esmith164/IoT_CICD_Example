@@ -1,4 +1,5 @@
 import { toggleLed, getLedState } from '../toggleLed';
+import { describe, expect, it } from "vitest";
 
 describe('toggleLed', () => {
     it('should toggle the LED state', () => {

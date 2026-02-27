@@ -1,4 +1,5 @@
 import { averageTemperatureReading } from '../averageTemperatureReading';
+import { describe, expect, it } from "vitest";
 
 describe('averageTemperatureReading', () => {
     it('should return 0 for empty array', () => {
