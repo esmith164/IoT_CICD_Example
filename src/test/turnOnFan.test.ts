@@ -13,4 +13,8 @@ describe('shouldTurnOnFan', () => {
     it('should return true above threshold', () => {
         expect(shouldTurnOnFan(35)).toBe(true);
     });
+
+    it('FAILURE DEMO: should fail because 40 is above threshold', () => {
+        expect(shouldTurnOnFan(40)).toBe(false);
+    });
 });
