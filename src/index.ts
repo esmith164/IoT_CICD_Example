@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
 
-const app = express();
+export const app = express();
 const PORT = process.env.PORT || 5001;
 
 // Middleware for parsing JSON
