@@ -7,6 +7,7 @@ describe('averageTemperatureReading', () => {
     });
 
     it('should calculate average correctly', () => {
+      //Triggerbuild //
         expect(averageTemperatureReading([10, 20, 30])).toBe(20);
         expect(averageTemperatureReading([5, 15])).toBe(10);
     });
