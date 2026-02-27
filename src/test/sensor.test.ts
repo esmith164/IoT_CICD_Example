@@ -9,7 +9,7 @@ describe("isValidSensorValue()", () => {
 
   it("returns false for negative values", () => {
     expect(isValidSensorValue(-1)).toBe(false);
-    expect(isValidSensorValue(8)).toBe(false);
+    expect(isValidSensorValue(-2)).toBe(false);
   });
 
   it("returns false for values above 100", () => {
