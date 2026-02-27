@@ -18,4 +18,8 @@ describe("isValidSensorValue()", () => {
     expect(isValidSensorValue(0)).toBe(true);
     expect(isValidSensorValue(100)).toBe(true);
   });
+
+  it("intentionally fails: rejects numeric string input", () => {
+    expect(isValidSensorValue("50" as unknown as number)).toBe(false);
+  });
 });
