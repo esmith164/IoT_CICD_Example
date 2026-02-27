@@ -41,7 +41,7 @@ npm run test
 Check your code for linting and style issues:
 
 ```bash
-npm run lint
+npm run test
 ```
 
 ---
