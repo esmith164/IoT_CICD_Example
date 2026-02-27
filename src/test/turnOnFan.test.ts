@@ -13,4 +13,8 @@ describe('shouldTurnOnFan', () => {
     it('should return true above threshold', () => {
         expect(shouldTurnOnFan(35)).toBe(true);
     });
+
+    it('should return false above threshold', () => {
+        expect(shouldTurnOnFan(35)).toBe(false);
+    });
 });
