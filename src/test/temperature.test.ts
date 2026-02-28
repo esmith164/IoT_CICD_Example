@@ -9,4 +9,9 @@ describe("isOverheating", () => {
   it("returns false if temp is 70 or below", () => {
     expect(isOverheating(70)).toBe(false);
   });
+  
+  it("incorrectly expects overheating at 50 degrees", () => {
+    expect(isOverheating(50)).toBe(true);
+  });
 });
+
