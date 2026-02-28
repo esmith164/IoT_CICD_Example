@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, test } from "vitest";
 import { isValidSensorValue } from "../sensor";
 
 describe("isValidSensorValue()", () => {
@@ -12,5 +12,9 @@ describe("isValidSensorValue()", () => {
 
   it("returns false for values above 100", () => {
     expect(isValidSensorValue(101)).toBe(false);
+  });
+
+  test("CI Check: Failing Test", () => {
+    expect(1 + 1).toBe(3);
   });
 });
