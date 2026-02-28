@@ -19,7 +19,7 @@ npm run build
 2. Start the app:
 
 ```bash
-npm start
+npm run start
 ```
 
 By default, the backend runs on port `5001`.
