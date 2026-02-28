@@ -13,4 +13,9 @@ describe("isValidSensorValue()", () => {
   it("returns false for values above 100", () => {
     expect(isValidSensorValue(101)).toBe(false);
   });
+
+  //added test to pass
+  it("returns true for boundary value 0", () => {
+    expect(isValidSensorValue(0)).toBe(true);
+  });
 });
