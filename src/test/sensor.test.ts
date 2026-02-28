@@ -10,6 +10,10 @@ describe("isValidSensorValue()", () => {
     expect(isValidSensorValue(99)).toBe(true);
   });
 
+  it("return false for a value greater than 100", () => {
+    expect(isValidSensorValue(1000)).toBe(false);
+  });
+
   it("returns false for negative values", () => {
     expect(isValidSensorValue(-1)).toBe(false);
   });
