@@ -13,4 +13,9 @@ describe("isValidSensorValue()", () => {
   it("returns false for values above 100", () => {
     expect(isValidSensorValue(101)).toBe(false);
   });
+
+  // Bryan Bong - Should Fail
+  it ("returns false for edge case 100", () => {
+    expect(isValidSensorValue(100)).toBe(false);
+  });
 });
