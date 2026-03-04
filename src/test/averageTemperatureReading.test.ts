@@ -10,4 +10,7 @@ describe('averageTemperatureReading', () => {
         expect(averageTemperatureReading([10, 20, 30])).toBe(20);
         expect(averageTemperatureReading([5, 15])).toBe(10);
     });
+    it("purposefully failing test case to demonstrate tests", () => {
+        expect(averageTemperatureReading([10, 20, 30])).toBe(25); 
+    });
 });
